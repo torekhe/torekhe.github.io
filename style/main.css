@@ -1,0 +1,185 @@
+body{
+background-color: #262424;
+color:white;
+font-size: 20px;
+line-height: 1;
+font-family:Roboto, sans-serif;
+}
+/* Стиль для кнопок */
+.btn_text{
+font-size: 30px;
+line-height: 1;
+font-family:Roboto, sans-serif;
+}
+.btn{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 30px;
+background-color: black;
+border: 3px solid #FF0000;
+color: white;
+border-radius: 100px;
+}
+.btn:hover{
+background-color: red;
+}
+/* */
+/* Начало Шапки */
+.header{
+display: flex;
+margin:0 150px;
+}
+.logo{
+margin-right: 600px;
+}
+
+.site-navigation{
+display: flex;
+gap: 5px;
+}
+.site-navigation_item{
+list-style: none;
+}
+.site-navigation_item_link{
+display: block;
+border: 1px solid red;
+text-decoration:none;
+color: white;
+
+padding: 15px;
+}
+.site-navigation_item_link:hover{
+background-color:red;
+}
+/* Шапка закончилась */
+
+
+/* Главная часть */
+
+/* Внешниай вид контейнера */
+.container{
+background-color: black;
+margin:20px 110px 100px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+}
+/* */
+
+/* 1слайд */
+.main-content{
+display: flex;
+margin-bottom: 0px;
+}
+.main_img{
+width: 500px;
+height: 500px;
+margin: 20px 50px;
+}
+h1{
+margin-top:100px;
+font-size: 60px;
+}
+.main-content_description{
+font-size: 30px;
+margin: 40px 50px 0 30px;
+}
+
+.btn-gowork{
+margin: 70px 150px 0;
+}
+.arrow_container{
+margin-left:700px;
+margin-bottom: 60px;
+}
+
+.arrow:hover{
+opacity: 0.7;
+}
+/* Закончился 1слайд*/
+/* Начало 2 блока Что такое ГИТ */
+.container_title{
+text-align: center;
+padding: 50px 50px 10px;
+}
+.information_description{
+padding: 0 50px;
+}
+.information_dop{
+width: 150px;
+margin-left: auto;
+margin-right: 50px;
+padding-bottom: 20px;
+}
+.information_dop_text{
+text-decoration: none;
+/* стиль Кнопки */
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 30px;
+background-color: black;
+border: 3px solid #FF0000;
+color: white;
+border-radius: 100px;
+/* */
+}
+.information_dop_text:hover{
+background-color: red;
+}
+/* Конец 2 блока Что такое ГИТ */
+
+/* 3 блок информация про наш тренажер пока кратко, со временем придумаю как развить тему */
+.container_description{
+padding: 10px 50px 30px;
+}
+/* конец 3 блока */
+
+/* 4 блок ТРЕНАЖЕР */
+.trainer-app__flex{
+display: flex;
+}
+.trainer-app_img{
+display: block;
+width: 450px;
+height: 450px;
+margin-right: 20px;
+}
+.trainer{
+width:750px;
+height: 500px;
+background-color: #690f0f;
+margin-bottom: 100px;
+}
+.trainer_text{
+font-size: 50px;
+}
+/* конец 4 блока ТРЕНАЖЕР */
+/* ПОДВАЛ */
+.footer{
+border-top: 1px solid #690f0f;
+}
+.footer_title{
+text-align: center;
+}
+.footer_navigation{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+.footer_navigation_item{
+list-style: none;
+}
+
+.footer_navigation_item_link{
+color: white;
+text-decoration: none;
+}
+.footer_navigation_item_link:hover{
+color: red;
+}
