@@ -33,7 +33,9 @@ display: flex;
 margin:0 150px;
 }
 .logo{
-    width: 200px;
+    width: 100px;
+    height: 70px;
+    margin-top: 10px;
 margin-right: 400px;
 }
 
@@ -86,6 +88,10 @@ font-size: 60px;
 .main-content_description{
 font-size: 30px;
 margin: 40px 50px 0 30px;
+}
+.href-startlearning{
+    text-decoration: none;
+    color: white
 }
 
 .btn-gowork{
@@ -141,23 +147,62 @@ padding: 10px 50px 30px;
 /* конец 3 блока */
 
 /* 4 блок ТРЕНАЖЕР */
+.trainer{
+    height: 800px;
+}
 .trainer-app__flex{
 display: flex;
 }
-.trainer-app_img{
-display: block;
-width: 450px;
-height: 450px;
-margin-right: 20px;
+/* .units{} */
+.units-item{
+    list-style: none;
+    padding-top: 40px;
+}
+.units-item_link{
+    color: white;
+    text-decoration: none;
+}
+.units-item_link:hover{
+    color: #690f0f;
 }
 .trainer{
+    /* margin-top: 200px; */
 width:750px;
-height: 500px;
+height: 700px;
 background-color: #690f0f;
 margin-bottom: 100px;
+padding:0 10px;
+}
+.input{
+    display: flex;
+}
+.textarea_input{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 100px;
+    width: 500px;
+    background-color: grey;
+    resize: none;
+    font-size: 30px;
 }
 .trainer_text{
-font-size: 50px;
+font-size: 16px;
+}
+.trainer_task{
+    font-size:18px;
+}
+.trainer_prompt{
+    color: grey;
+    font-size: 14px;
+}
+.btn_check{
+    margin-top: 20px;
+padding:0;
+width: 100px;
+height: 106px;
+border: 1px solid #FF0000;
+border-radius: 0;
+
 }
 /* конец 4 блока ТРЕНАЖЕР */
 /* ПОДВАЛ */

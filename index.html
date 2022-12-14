@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header">
-        <img src="/images/gitlogo.svg" class="logo" alt="logo">
+        <img src="/images/logo.png" class="logo" alt="logo">
         <ul class="site-navigation">
         <li class="site-navigation_item"><a href="#gitinfo" class="site-navigation_item_link">Что такое Git</a></li>
         <li class="site-navigation_item"><a href="#appinfo" class="site-navigation_item_link">О нашем тренажере</a></li>
@@ -27,7 +27,7 @@
             <div class="main-content_text">
             <h1>Онлайн тренажер GIT</h1>
             <p class="main-content-description">Онлайн тренажер Git- тренажер, благодаря котому, вы узнаете все базовые команды Git, и сможете использовать их в своих проектах</br> после прохождения нашего обучения!</p>
-            <button class="btn btn-gowork btn_text">Начать учиться</button>
+            <button class="btn btn-gowork btn_text"> <a class="href-startlearning" href="#training_app">Начать учиться</a></button>
             </div>
         </article>
             <div class="arrow_container">
@@ -48,17 +48,39 @@
         <article class="container trainer-app" id="training_app">
             <h2 class="container_title">Тренажер</h2>
             <div class="trainer-app__flex">
-            <img src="/images/nagiev-trainer.png" class="trainer-app_img" alt="тренажер">
-            <div class="trainer"><p class="trainer_text">Здесь будет сам тренажер</p></div>
+                <ul class="units">
+                    <li class="units-item"><a href="#training_app" class="units-item_link"> Шпаргалка по основным командам</a></li>
+                    <li class="units-item"><a href="#training_app" class="units-item_link">Шпаргалка по ветвлению и слиянию</a></li>
+                    <li class="units-item"><a href="#training_app" class="units-item_link">Шпаргалка по совместной работе и обновлению проектов</a></li>
+                    <li class="units-item"><a href="#training_app" class="units-item_link">Шпаргалка по осмотру и сравнению</a></li>
+                    <li class="units-item"><a href="#training_app" class="units-item_link">Шпаргалка по отладке</a></li>
+                </ul>
+                <div class="trainer">
+                    <h3>Шпаргалка по основным командам:</h3>
+                    <p class="trainer_text">Команда git add добавляет содержимое рабочей директории в индекс (staging area) для последующего коммита.</p>
+                    <p class="trainer_text">Команда git status показывает состояния файлов в рабочей директории и индексе: какие файлы изменены, но не добавлены в индекс; какие ожидают коммита в индексе.</p>
+                    <p class="trainer_text">Команда git diff используется для вычисления разницы между любыми двумя Git деревьями. </p>
+                    <p class="trainer_text">Команда git commit берёт все данные сохраняет их слепок во внутренней базе данных, а затем сдвигает указатель текущей ветки на этот слепок.</p>
+                    <p class="trainer_text">Команда git rm используется в Git для удаления файлов из индекса и рабочей директории.</p>
+                    <p class="trainer_text">Команда git reset, как можно догадаться из названия, используется в основном для отмены изменений. Она изменяет указатель HEAD и, опционально, состояние индекса.</p>
+                    <p class="trainer_text">Команда git clean используется для удаления мусора из рабочей директории.</p>
+                    <h4>Задание:</h4>
+                    <p class="trainer_task">Написать команду, которая дабвит файл "Hello Git.txt" в стэк и удалит файл "Delete this.txt", проверит состояние файлов в рабочей директории, удалит весь мусор из рабочей директории и сохрнаит все изменения во внутренней базе данных. </p>
+                    <p class="trainer_prompt">Это все дожно быть записанно в блоке, расположенном ниже, программа должна содержать все (необходимые) команды. После того, как вы закончите написание команды, нажмите на кнопку "проверить" и ждите резултат. Если вы решили правильно, вы перейдете на следующий уровень, если же вы ошиблись, внимательно прочитайте теорию еще раз и повторите вашу попытку. Удачи!</p>
+                    <div class="input">
+                        <textarea class="textarea_input" name="inputtext" id="input" cols="30" rows="10" placeholder="Введите свой код"></textarea>
+                        <button class="btn_check btn">проверить</button>
+                    </div>
+                </div>
             </div>
         </article>
         </main>
     <footer class="footer">
         <h3 class="footer_title">Онлайн тренажер Git</h3>
         <ul class="footer_navigation">
-            <li class="footer_navigation_item"><a class="footer_navigation_item_link" href="#">Информация о нас</a></li>
             <li class="footer_navigation_item"><a class="footer_navigation_item_link" href="#gitinfo">Что такое Git</a></li>
             <li class="footer_navigation_item"><a class="footer_navigation_item_link" href="#appinfo"> О нашем тренажере</a></li>
+            <li class="footer_navigation_item"><a class="footer_navigation_item_link" href="#training_app">Тренажёр</a></li>
         </ul>
     </footer>
 </body>
